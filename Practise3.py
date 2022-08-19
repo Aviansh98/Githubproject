@@ -45,7 +45,7 @@ driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-mi
                               "2]/div/div/button").click()
 
 # driver.close()
-# driver.quit()
+driver.quit()
 print("test completed")
 
 print("test")
