@@ -44,7 +44,7 @@ time.sleep(5)
 driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-microphone-camera/div/div/div/form/div["
                               "2]/div/div/button").click()
 
-# driver.close()
+driver.close()
 #driver.quit()
 print("test completed")
 
