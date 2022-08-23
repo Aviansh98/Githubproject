@@ -54,46 +54,11 @@ driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-mi
 time.sleep(2)
 driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-microphone-camera/div/div/div"
                               "/form/div[1]/div[2]/div/div[2]/div/input").click()
-# #code to give permission for use for camera and mic
-# desired_cap = {
-#          'browser_version': '104.0.5112.101',
-#          'os': 'Windows',
-#          'os_version': '10',
-# # # var caps = new ChromeOptions();
-# # #
-# # # caps.PlatformName = "Mac OSX 10.15";
-# # # caps.BrowserVersion = "84";
-# # # caps.AddAdditionalCapability("username", username, true);
-# # # caps.AddAdditionalCapability("password", authkey, true);
-# # #Configure ChromeOptions to pass fake media stream
-#         'chromeOptions': {
-#     'args': ["--use-fake-device-for-media-stream", "--use-fake-ui-for-media-stream"]
-#   }
-# }
-# driver = webdriver.Remote(command_executor = 'http://avinash_FWHOef:scKzncFzBydqfLKqxphp@hub.browserstack.com/wd/hub', options=webdriver.ChromeOptions())
-# # driver = webdriver.Remote(command_executor='http://localhost:4444/wd/hub',options=webdriver.ChromeOptions())
 
-# driver.get('http://www.google.com/')
-# WebCam Test
 print("next page")
 
 time.sleep(2)
-#driver.find_element(By.XPATH, "webcam-launcher").click()
 
-
-# # Mic Test
-# driver.get("https://www.vidyard.com/mic-test/")
-# time.sleep(5)
-# driver.find_element(By.XPATH, "//a[@id='start-test']").click()
-# time.sleep(10)
-
-
-
-# ChromeOptions options = new Chromeoption()
-# options.addargument("disable use for camera");
-# driver = new Chromeoptions();
-# time.sleep(5)
-# thrid toggle button
 
 time.sleep(2)
 driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-microphone-camera/div/div/div/form/div[1]/div[3]/div/div[2]/div/input").click()
