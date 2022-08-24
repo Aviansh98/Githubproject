@@ -18,9 +18,10 @@ opt.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.media_stream_camera": 1,
     "profile.default_content_setting_values.geolocation": 1,
     "profile.default_content_setting_values.notifications": 1,
-    "profile.default_content_setting_values.permission_screen": 1
+
 
   })
+opt.add_experimental_option("prefs", {"profile.default_content_setting_values.permission": 1 })
 
 driver = webdriver.Chrome(options=opt, executable_path=r'C:\Users\aksha\Downloads\chromedriver_win32\chromedriver.exe')
 
@@ -64,6 +65,7 @@ time.sleep(2)
 
 driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-microphone-camera/div/div/div"
                               "/form/div[1]/div[3]/div/div[2]/div/input").click()
+
 
 # continue button of permission screen
 driver.find_element(By.XPATH, "/html/body/app-root/div/div/div/div/app-enable-microphone-camera/div/div/div/form/div["
